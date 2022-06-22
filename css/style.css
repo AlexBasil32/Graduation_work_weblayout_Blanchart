@@ -199,8 +199,6 @@ color:var(--color-night-rider);
  
 .ui-accordion-header-collapsed:hover {
   border-color: var(--color-amethyst);
-  margin-top: -1px;
-  margin-bottom: -1px;
 }
 
 .ui-state-hover .accordion__title {
@@ -939,6 +937,7 @@ padding-left: 50px;
     z-index: 2;
     opacity: 1;
   }
+
   .gallery-slide-img {
     display: block;
   }
@@ -971,9 +970,11 @@ padding-left: 50px;
     border: 0;
     background-color: transparent;
   }
+
   .choices__list--dropdown .is-selected {
     display: none;
   }
+
   .choices__list--dropdown .choices__item--selectable.is-highlighted {
     background-color: transparent;
   }
@@ -1273,7 +1274,7 @@ padding-left: 50px;
   }
   
   .gallery-swiper-slide:focus {
-    border: 3px solid #7943a4;
+    outline: 3px solid #7943a4;
     
   }
   
@@ -1442,7 +1443,11 @@ padding-left: 50px;
   .ui-accordion-content {
     padding-top: 1px;
   }
-  
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
+   }
   .ui-accordion-header-collapsed {
     border-top: 1px solid transparent;
     border-bottom: 1px solid var(--color-vl-grey);
